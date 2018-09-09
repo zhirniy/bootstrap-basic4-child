@@ -64,4 +64,8 @@ jQuery(document).ready(function($) {
     	$( "#point_left").css( "display", "block");
      }
   );
+  if(document.location.href=="http://localhost/wordpress/#left"){
+      $( "#point_left").css( "display", "none");
+      $( "#point_right").css( "display", "block");
+  }
 });

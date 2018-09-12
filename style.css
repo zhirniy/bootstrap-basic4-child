@@ -535,3 +535,144 @@ Template: bootstrap-basic4
    } 
 }
 /*Файлы стилей для разрешений до 300px*/
+
+
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+@supports (-ms-ime-align:auto) {
+    @media screen and (min-width: 769px){
+    #left:after{
+        content: "";
+        width: 5%;
+        height: 600px;
+        background-color: #ff9210;
+        position: absolute;
+        border-top: 600px solid transparent;
+        border-right: 70px solid #ffd25b;
+        left: 82%;
+        z-index: 1;
+     }
+    #left, #right{
+        width: 46%;
+    }
+    .block {
+        transform: skewX(-9deg);
+        z-index: 20;
+    }
+
+    .page-id-9 #right_content .block {
+         left: -8%;
+    }
+
+    .page-id-9 #left:hover{
+        width: 65%;
+     }
+
+    .page-id-9 #left:hover:after{
+        left: 92%;
+        content: "";
+        background-color: #ff9210;
+     }
+
+     .page-id-9 #left:hover .block{
+        z-index: 100;
+        margin-right: -85px;
+     }
+    
+     .page-id-9 #left:hover + #right #right_content .block{
+        z-index: 100;
+        margin-left: 0px;
+        width: 300px;
+    }
+
+      .page-id-9 #right:hover{
+        width: 60%;
+     }
+
+     .page-id-9 #right:hover:before{
+        content: "";
+        width: 5%;
+        height: 600px;
+        background-color: #ff9210;
+        position: absolute;
+        border-top: 600px solid transparent;
+        border-right: 70px solid #ffd25b;
+        left: 0%;
+        z-index: 1;
+     }
+    .page-id-9 #right:hover .block{
+        margin-left: 80px;
+     }
+    }
+
+}
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+
+/*IE*/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and  (min-width: 769px){
+
+    #left:after{
+        content: "";
+        width: 5%;
+        height: 600px;
+        background-color: #ff9210;
+        position: absolute;
+        border-top: 600px solid transparent;
+        border-right: 70px solid #ffd25b;
+        left: 82%;
+        z-index: 1;
+     }
+    #left, #right{
+        width: 46%;
+    }
+    .block {
+        transform: skewX(-9deg);
+        z-index: 20;
+    }
+
+    .page-id-9 #right_content .block {
+         left: -8%;
+    }
+
+    .page-id-9 #left:hover{
+        width: 65%;
+     }
+
+    .page-id-9 #left:hover:after{
+        left: 92%;
+        content: "";
+        background-color: #ff9210;
+     }
+
+     .page-id-9 #left:hover .block{
+        z-index: 100;
+        margin-right: -85px;
+     }
+    
+     .page-id-9 #left:hover + #right #right_content .block{
+        z-index: 100;
+        margin-left: 0px;
+        width: 300px;
+    }
+
+      .page-id-9 #right:hover{
+        width: 60%;
+     }
+
+     .page-id-9 #right:hover:before{
+        content: "";
+        width: 5%;
+        height: 600px;
+        background-color: #ff9210;
+        position: absolute;
+        border-top: 600px solid transparent;
+        border-right: 70px solid #ffd25b;
+        left: 0%;
+        z-index: 1;
+     }
+    .page-id-9 #right:hover .block{
+        margin-left: 80px;
+     }
+
+}
+/*IE*/
